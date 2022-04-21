@@ -1,0 +1,91 @@
+.lista-pokemons {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.pokemon-card {
+    width: 40%;
+    max-width: 290px;
+    height: 157px;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5%;
+
+}
+
+img {
+    margin-left: 30px;
+}
+
+.pokemon-info {
+    width: 50%;
+}
+
+.pokemon-info h1 {
+    color: #262835;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 900;
+
+}
+
+.img-pokemon {
+    background: url('../../../assets/images/bg/background-list-pokemons.svg') no-repeat;
+    width: 50%;
+}
+
+.img-pokemon img {
+    margin: 0px 20px;
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+.water {
+    background-color: blue;
+}
+
+.fire {
+    background-color: orangered;
+}
+
+.poison {
+    background-color: purple;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.grass,
+.bug {
+    background-color: green;
+}
+
+.flying {
+    background-color: aqua;
+}
+
+.ground,
+.rock {
+    background-color: brown;
+}
+
+
+
+li {
+    width: 55px;
+    height: 20px;
+    background: #efefef;
+    border-radius: 32px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 12px;
+}
