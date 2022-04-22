@@ -1,1 +1,33 @@
-<p>details works!</p>
+<app-poke-header></app-poke-header>
+
+
+<section class="poke-info">
+    <div class="poke-info-header">
+        <div class="img-poke">
+            <img [src]="pokemon.sprites?.other.dream_world.front_default" [alt]="pokemon.name">
+        </div>
+        <h1>{{pokemon.name}}</h1>
+    </div>
+
+    <p class="estatisticas">Estastisticas</p>
+    <ul>
+        <!-- <li>Hp <p>{{pokemon.stats[0].base_stat}}</p>
+        </li>
+        <li>Attack <p>10</p>
+        </li>
+        <li>Defense <p>10</p>
+        </li>
+        <li>Special Attack <p>10</p>
+        </li>
+        <li>Special Defense <p>10</p>
+        </li>
+        <li>Speed <p>10</p>
+        </li> -->
+
+        <li *ngFor="let value of pokemon.stats">
+            {{value.stat.name}}
+            <p>{{value.base_stat}}</p>
+        </li>
+    </ul>
+
+</section>

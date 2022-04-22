@@ -19,10 +19,21 @@ export class PokeListComponent implements OnInit {
       res => {
         this.setPokeList = res.results
         this.pokeList = this.setPokeList
-        this.pokeList.sort()
       },
       error => error
     )
   }
+
+  public search(event: Event): void {
+    const target = event.target as HTMLInputElement
+    const value = target.value
+    const filter = this.setPokeList.filter((res: any) => {
+      return !res.name.indexOf(value.toLowerCase());
+    })
+
+    this.pokeList = filter
+  }
+
+
 
 }

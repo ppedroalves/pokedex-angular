@@ -6,6 +6,7 @@
     flex-wrap: wrap;
 }
 
+
 .pokemon-card {
     width: 40%;
     max-width: 290px;
@@ -16,6 +17,11 @@
     padding: 20px;
     margin: 5%;
 
+}
+
+a {
+    display: flex;
+    text-decoration: none;
 }
 
 img {
